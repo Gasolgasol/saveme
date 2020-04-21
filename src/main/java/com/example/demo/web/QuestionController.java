@@ -27,7 +27,7 @@ public class QuestionController {
 	    
 	    @RequestMapping(value = "/ask-question", method = RequestMethod.POST)
 		public String newQuestion(Question quest) {
-
+	    	
 			questionData.save(quest);
 			return ("redirect:/");
 

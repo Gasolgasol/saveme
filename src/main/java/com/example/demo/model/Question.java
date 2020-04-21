@@ -25,7 +25,17 @@ public class Question {
     
     private String tags;
     
-    private int answers;
+    private String author;
+    
+    public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	private int answers;
     
     private int views;
 

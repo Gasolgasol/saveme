@@ -205,9 +205,7 @@ function scroll_to_element(id)
 			<label> Description : </label>
 			<form:textarea name="comment" path="description" id="comment" rows="10" cols="10" tabindex="4" class="textarea" required=""/>
 			
-
-		
-		 </div>
+	 </div>
 
 		 
 				  <div class="ask_row">
@@ -216,6 +214,8 @@ function scroll_to_element(id)
 		  <span class="notice">  Tags are short keywords, with no space within. Up to five tags can be used. More than five tags will removed automatically. </span>
 		 </div>
 		
+		<form:input  type="hidden" name="redirect_to" path="views" value="0"/>
+		<form:input  type="hidden" name="redirect_to" path="author" value="${pageContext.request.userPrincipal.name}"/>
 
 			<c:choose>
     <c:when test="${pageContext.request.userPrincipal.name != null}">
